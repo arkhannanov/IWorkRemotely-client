@@ -1,0 +1,54 @@
+.jobs-container {
+  margin: auto auto 5rem auto;
+  width: 69.75rem;
+
+  &__header-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    color: #1D4D70;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  &__time {
+    font-size: 1.5rem;
+    color: #1D4D70;
+    margin-left: 1rem;
+    line-height: 2.3rem;
+  }
+
+  &__footer-container {
+    text-align: center;
+    margin: auto auto 1.5rem auto;
+  }
+  &__footer {
+    text-align: center;
+    background: white;
+    height: 2.5rem;
+    margin: 1.5rem auto 0 auto;
+    display: inline-block;
+    box-shadow: 1px 2px 11px 0px rgba(50, 50, 50, 0.64);
+    color:  #1D4D70;
+    padding: 0 0.5rem 0 0.5rem;
+    line-height: 2.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 1270px) {
+    transform: translateY(-95rem) scale(0.75);
+  }
+
+  @media screen and (max-width: 1060px) {
+    transform: translate(-2rem, -133rem) scale(0.65);
+  }
+
+  @media screen and (max-width: 930px) {
+    transform: translate(-4rem, -133rem) scale(0.65);
+  }
+}

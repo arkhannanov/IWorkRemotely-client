@@ -1,0 +1,98 @@
+.top {
+  display: flex;
+  flex-direction: row;
+
+  &__image{
+    background: url('./../../assets/images/top.png') center no-repeat;
+    min-width: 40rem;
+    margin: 0 2rem 0 15%;
+    height: 42rem;
+
+    @media screen and (max-width: 1620px) {
+      background-image: url('./../../assets/images/top2.png');
+    }
+
+    @media screen and (max-width: 1470px) {
+      min-width: 30rem;
+    }
+
+    @media screen and (max-width: 1290px) {
+      height: 34rem;
+    }
+
+    @media screen and (max-width: 1140px) {
+      background-image: url('./../../assets/images/top3.png');
+      min-width: 20rem;
+      height: 26rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-left: 5%;
+    }
+  }
+
+  &__content {
+    margin: 0 15% 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 32rem;
+    white-space: pre-line;
+
+    &-content {
+      margin-top: 2rem;
+      text-align: end;
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+
+      @media screen and (max-width: 1290px) {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-top: 1.35rem;
+      }
+    }
+  }
+
+  &__content-header {
+    color: #236798;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 8rem;
+    text-align: end;
+    white-space: nowrap;
+
+    @media screen and (max-width: 1290px) {
+      font-size: 2rem;
+      margin-top: 7.5rem;
+    }
+
+    @media screen and (max-width: 1140px) {
+      margin-top: 5.5rem;
+    }
+  }
+
+  &__post-job {
+    background: #1D4D70;
+    width: 24rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 1.6rem;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 1290px) {
+      font-size: 1.066rem;
+      width: 19rem;
+      height: 2.667rem;
+      border-radius: 1.066rem;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

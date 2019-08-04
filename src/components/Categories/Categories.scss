@@ -1,0 +1,141 @@
+.categories {
+  width: 60%;
+  height: 2.8rem;
+  margin: 0.5rem auto 4rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  &__programmimg-container {
+    height: 2.8rem;
+    display: flex;
+    min-width: 13rem;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__programmimg-logo {
+    background: url('./../../assets/images/programming.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__programmimg-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__customer-support-container {
+    height: 2.8rem;
+    min-width: 13.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__customer-support-logo {
+    background: url('./../../assets/images/customer-support.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__customer-support-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__design-container {
+    height: 2.8rem;
+    min-width: 7rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__design-logo {
+    background: url('./../../assets/images/design.png') 0.6rem 0.33rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__design-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__product-container {
+    height: 2.8rem;
+    min-width: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__product-logo {
+    background: url('./../../assets/images/product.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__product-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__sales-marketing-container {
+    height: 2.8rem;
+    min-width: 14.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__sales-marketing-logo {
+    background: url('./../../assets/images/sales-marketing.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__sales-marketing-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__all-other-container {
+    height: 2.8rem;
+    min-width: 8.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__all-other-logo {
+    background: url('./../../assets/images/all-other.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__all-other-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+}
