@@ -1,5 +1,9 @@
 .app-wrapper {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
 
   &__preloader_displaynone {
     display: none;

@@ -2,15 +2,17 @@ import * as serviceWorker from './serviceWorker';
 import store from "./redux/redux-store";
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import 'semantic-ui-css/semantic.css';
 import './index.css';
-import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
+import AppContainer from "./AppContainer";
+
 
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-      <App/>
+      <AppContainer/>
     </Provider>
   </BrowserRouter>, document.getElementById('root'));
 

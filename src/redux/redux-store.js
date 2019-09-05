@@ -5,7 +5,7 @@ import jobsReducer from "./jobs-reducer";
 import appReducer from "./app-reducer";
 
 let reducers = combineReducers({
-    jobsSection: jobsReducer,
+    JobsSection: jobsReducer,
     AppSection: appReducer,
     form: formReducer
 });

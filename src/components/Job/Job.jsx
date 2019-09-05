@@ -13,7 +13,7 @@ const Job = (props) => {
         Object.keys(props.jobs).length !== 0 && props.jobs.bestJobs.map(u => <div key={u._id} className='job'>
           <NavLink to='/jobs/id' className={u.status === 'none' ? 'job__container  job__container_modified' : 'job__container'}>
             <div className='job__icon-container'>
-              <img className={u.status === 'none' || u.status === 'good' ? 'job_icon job_icon_modified' : 'job_icon'} src={`http://localhost:3000/${u.logo}`} alt='Job Icon' width='90'
+              <img className={u.status === 'none' || u.status === 'good' ? 'job_icon job_icon_modified' : 'job_icon'} src={`http://server.arkhanpj.beget.tech//${u.logo}`} alt='Job Icon' width='90'
                    height='90'/>
             </div>
             <div className='job__content'>
@@ -35,7 +35,7 @@ const Job = (props) => {
         Object.keys(props.jobs).length !== 0 && props.jobs.allOtherJobs.map(u => <div key={u._id} className='job'>
           <NavLink to='/jobs/id' className={u.status === 'none' ? 'job__container  job__container_modified' : 'job__container'}>
             <div className='job__icon-container'>
-              <img className={u.status === 'none' || u.status === 'good' ? 'job_icon job_icon_modified' : 'job_icon'} src={`http://localhost:3000/${u.logo}`} alt='Job Icon' width='90'
+              <img className={u.status === 'none' || u.status === 'good' ? 'job_icon job_icon_modified' : 'job_icon'} src={`http://server.arkhanpj.beget.tech/${u.logo}`} alt='Job Icon' width='90'
                    height='90'/>
             </div>
             <div className='job__content'>

@@ -24,7 +24,6 @@ let initialState = {
   productJobs: {},
   allOtherJobs: {},
   isLoading: true
-
 };
 
 const jobsReducer = (state = initialState, action) => {
@@ -154,7 +153,7 @@ export const getProductJobs = () => {
 export const getAllOtherJobs = () => {
   return (dispatch) => {
     jobsAPI.getAllOtherJobs().then(data => {
-      setTimeout(() => dispatch(setIsLoading(false)), 2000);
+      setTimeout(() => dispatch(setIsLoading(false)), 1000);
       dispatch(setAllOtherJobs(data));
     });
   }

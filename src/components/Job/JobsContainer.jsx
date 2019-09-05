@@ -152,7 +152,7 @@ class JobsContainer extends React.Component {
           <Job jobs={this.props.allOtherJobs}/>
           <div className='jobs-container__footer-container'>
             <NavLink to='/jobs/programming/all' className='jobs-container__footer'>Посмотреть
-              все {this.props.allOtherJobs.allJobsAmount} другие вакансие</NavLink>
+              все {this.props.allOtherJobs.allJobsAmount} Других вакансий</NavLink>
           </div>
         </div>
       }
@@ -162,17 +162,17 @@ class JobsContainer extends React.Component {
 
 let mapStateToProps = (state) => {
   return {
-    programmingJobs: state.jobsSection.programmingJobs,
-    designJobs: state.jobsSection.designJobs,
-    customerSupportJobs: state.jobsSection.customerSupportJobs,
-    copyrightingJobs: state.jobsSection.copyrightingJobs,
-    devopsSystemAdministrationJobs: state.jobsSection.devopsSystemAdministrationJobs,
-    salesMarketingJobs: state.jobsSection.salesMarketingJobs,
-    businessManagementJobs: state.jobsSection.businessManagementJobs,
-    financeLegalJobs: state.jobsSection.financeLegalJobs,
-    productJobs: state.jobsSection.productJobs,
-    allOtherJobs: state.jobsSection.allOtherJobs,
-    isLoading: state.jobsSection.isLoading
+    programmingJobs: state.JobsSection.programmingJobs,
+    designJobs: state.JobsSection.designJobs,
+    customerSupportJobs: state.JobsSection.customerSupportJobs,
+    copyrightingJobs: state.JobsSection.copyrightingJobs,
+    devopsSystemAdministrationJobs: state.JobsSection.devopsSystemAdministrationJobs,
+    salesMarketingJobs: state.JobsSection.salesMarketingJobs,
+    businessManagementJobs: state.JobsSection.businessManagementJobs,
+    financeLegalJobs: state.JobsSection.financeLegalJobs,
+    productJobs: state.JobsSection.productJobs,
+    allOtherJobs: state.JobsSection.allOtherJobs,
+    isLoading: state.JobsSection.isLoading
   }
 }
 

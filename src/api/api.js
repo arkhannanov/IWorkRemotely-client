@@ -1,7 +1,7 @@
 import * as axios from "axios";
 
 const instance = axios.create({
-  baseURL: 'http://localhost:3000'
+  baseURL: 'http://server.arkhanpj.beget.tech/'
 });
 
 
@@ -65,7 +65,10 @@ export const jobsAPI = {
       .then(response => {
         return response.data;
       });
-  }
+  },
+  postJob(value) {
+    return instance.post(`/jobs`, value);
+  },
 }
 
 

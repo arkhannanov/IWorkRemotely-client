@@ -51,6 +51,94 @@
     margin: auto;
   }
 
+  &__copyrighting-container {
+    height: 2.8rem;
+    min-width: 10rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__copyrighting-logo {
+    background: url('./../../assets/images/copyrighting.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__copyrighting-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__devops-system-administration-container {
+    height: 2.8rem;
+    min-width: 13.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__devops-system-administration-logo {
+    background: url('./../../assets/images/devops-system-administration.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__devops-system-administration-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__business-management-container {
+    height: 2.8rem;
+    min-width: 14.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__business-management-logo {
+    background: url('./../../assets/images/business-management.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__business-management-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  &__finance-legal-container {
+    height: 2.8rem;
+    min-width: 16.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  &__finance-legal-logo {
+    background: url('./../../assets/images/finance-legal.png') 0.5rem 0.46rem no-repeat;
+    min-width: 3rem;
+    height: 3rem;
+    margin: auto;
+  }
+
+  &__finance-legal-content {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+  }
+
   &__design-container {
     height: 2.8rem;
     min-width: 7rem;

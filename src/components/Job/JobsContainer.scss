@@ -1,5 +1,5 @@
 .jobs-container {
-  margin: auto auto 5rem auto;
+  margin: auto auto 12rem auto;
   width: 69.75rem;
 
   &__header-container {
@@ -41,14 +41,14 @@
   }
 
   @media screen and (max-width: 1270px) {
-    transform: translateY(-95rem) scale(0.75);
+    transform: translateY(-103rem) scale(0.75);
   }
 
   @media screen and (max-width: 1060px) {
-    transform: translate(-2rem, -133rem) scale(0.65);
+    transform: translate(-2rem, -145rem) scale(0.65);
   }
 
   @media screen and (max-width: 930px) {
-    transform: translate(-4rem, -133rem) scale(0.65);
+    transform: translate(-4rem, -145.5rem) scale(0.65);
   }
 }
