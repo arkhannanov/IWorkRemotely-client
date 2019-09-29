@@ -3,6 +3,7 @@ import './PostAJob.scss';
 import {Field} from "redux-form";
 import {reduxForm} from "redux-form";
 import DropDownSelect from "./DropDownSelect";
+import TextEditor from "../TextEditor/TextEditor.jsx"
 
 
 const options = ['Программирование', 'Дизайн', 'Поддержка клиентов',
@@ -207,7 +208,7 @@ const PostAJob = (props) => {
             </div>
 
           </div>
-
+            <TextEditor/>
         </div>
 
 
