@@ -5,10 +5,10 @@ import Toolbar from '../Toolbar/Toolbar';
 import './textEditor.scss'
 
 const EditorWrapper = styled.div`
-  min-width: 700px;
   display: flex;
   flex-direction: column;
   height: fit-content;
+  margin-top:10px;
 `;
 
 const EditorContainer = styled.div`
