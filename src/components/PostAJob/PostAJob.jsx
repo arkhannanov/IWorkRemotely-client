@@ -1,9 +1,9 @@
 import React from 'react';
 import './PostAJob.scss';
-import {Field} from "redux-form";
-import {reduxForm} from "redux-form";
+import {reduxForm, Field} from "redux-form";
 import DropDownSelect from "./DropDownSelect";
-import TextEditor from "../TextEditor/TextEditor.jsx"
+import TextEditor from "../TextEditor/TextEditor.jsx";
+import Drop from "../Drop/Drop.jsx"
 
 
 const options = ['Программирование', 'Дизайн', 'Поддержка клиентов',
@@ -105,7 +105,7 @@ const PostAJob = (props) => {
                   component={({input}) => (
 
                     radioButtonOptions.map(option => <div key={option.id}
-                                                          className={`post-a-job__form-job-type-types-${option.id}`}>
+                        className={`post-a-job__form-job-type-types-${option.id}`}>
                       <input
                         id={option.id}
                         type='radio'
@@ -215,7 +215,13 @@ const PostAJob = (props) => {
                   <div className='post-a-job__dot-label'></div>
                </div>
               </div>
-              <TextEditor/>
+
+              <Field
+                name="job desription"
+                // component="select"
+                component={TextEditor}
+                options={options}
+              />
           </div>              
 
             <div className='post-a-job__form-job-name-container'>              
@@ -259,17 +265,7 @@ const PostAJob = (props) => {
                   <div className='post-a-job__dot-label'></div>
                </div>
               </div>
-              
-              <div className="post-a-job__form-logo-dnd">
-                <div className="post-a-job__form-logo-dnd-title">Кликните или перетащите фото в это окно</div>
-                <input
-                    className='post-a-job__form-logo'
-                    // validate={[required, maxLength50]}
-                    name="logo"
-                    type="file"
-                    accept=".jpg, .png, .jpeg"
-                />
-              </div>
+                      <Drop/>
               <div className='post-a-job__form-description'>Настоятельно рекомендуется использовать ваш аватар Twitter или Facebook. Необязательно - логотип вашей компании будет отображаться в верхней части списка.</div>
             </div>
 
@@ -323,7 +319,12 @@ const PostAJob = (props) => {
                   <div className='post-a-job__dot-label'></div>
                </div>
               </div>
-              <TextEditor/>
+              <Field
+                name="about company"
+                // component="select"
+                component={TextEditor}
+                options={options}
+              />
           </div>           
         </div>
 

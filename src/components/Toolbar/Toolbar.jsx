@@ -13,15 +13,13 @@ const ToolbarContainer = styled.div`
   border-bottom:none;
 `;
 
-export default class Toolbar extends React.Component {
-  render() {
+export default function Toolbar(props){
     return (
       <ToolbarContainer>
         <RenderInlineStyles
-            editorState={this.props.editorState}
-            updateEditorState={this.props.updateEditorState}
+            editorState={props.editorState}
+            updateEditorState={props.updateEditorState}
         />
       </ToolbarContainer>
     );
-  }
 }

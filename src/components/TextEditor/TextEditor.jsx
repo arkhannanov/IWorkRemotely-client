@@ -1,5 +1,6 @@
-import React from 'react';
-import {Editor, EditorState} from 'draft-js';
+import React, {useState} from 'react';
+import {Editor, EditorState,InlineToolbar} from 'draft-js';
+import {stateToHTML} from 'draft-js-export-html';
 import styled from 'styled-components'
 import Toolbar from '../Toolbar/Toolbar';
 import './textEditor.scss'
@@ -22,27 +23,24 @@ const EditorContainer = styled.div`
   border: 1px solid #236798;
 `;
 
-export default class MyEditor extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {editorState: EditorState.createEmpty()};
+export default function MyEditor({input: {value, onChange}}){
+    const [editorState, setEditorState] = useState(EditorState.createEmpty());
+
+  let updateEditorState = (editorState) => {
+    onChange(stateToHTML(editorState.getCurrentContent()));
+    setEditorState(editorState);
   }
 
-  updateEditorState(editorState){
-    this.setState({editorState});
-  }
 
-  render() {
     return (
       <EditorWrapper>
-        <Toolbar editorState={this.state.editorState} updateEditorState = {this.updateEditorState.bind(this)}/>
+        <Toolbar editorState={editorState} updateEditorState = {updateEditorState}/>
         <EditorContainer>
           <Editor 
-              editorState={this.state.editorState}
-              onChange={this.updateEditorState.bind(this)}
+              editorState={editorState}
+              onChange={updateEditorState}
           />
         </EditorContainer>
        </EditorWrapper>
     );
-  }
 }
