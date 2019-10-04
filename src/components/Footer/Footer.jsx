@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
-import logo from './../../assets/images/logo-big.png'
 import {NavLink} from "react-router-dom";
+import logo from './../../assets/images/logo-big.png'
 import facebook from './../../assets/images/facebook.png'
 import telegram from './../../assets/images/telegram.png'
 import vk from './../../assets/images/vk.png'

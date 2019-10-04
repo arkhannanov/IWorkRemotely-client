@@ -6,13 +6,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
-import AppContainer from "./AppContainer";
+import App from "./components/App/App.js";
 
 
 ReactDOM.render(
   <BrowserRouter>
     <Provider store={store}>
-      <AppContainer/>
+      <App/>
     </Provider>
   </BrowserRouter>, document.getElementById('root'));
 
